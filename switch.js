@@ -1,4 +1,4 @@
-var token = 5;
+var token = 7;
 switch (token) {
     case 1:
         console.log("1 logic is implemented");
@@ -29,4 +29,5 @@ switch (token) {
         break;
     default:
         console.log("Not found");
+        break;
 }
