@@ -30,7 +30,6 @@ for (var k = 1; k <= 5; k++) {
 
 
 //pattern 3
-
 for (n = 1; n <= 5; n++) {
     for (var z = n; z <= 5; z++) {
         document.write(z);
