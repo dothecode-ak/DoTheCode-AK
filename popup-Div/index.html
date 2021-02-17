@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Div</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setInterval(function () {
+            $("#DivPopup").show();
+        }, 3000);
+
+    </script>
+    <style>
+        #DivPopup {
+            display: none;
+            background-color: aqua;
+            height: 100%;
+            width: 100%;
+            background-size: 100% 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="DivPopup">
+        <h4>Popup</h4>
+    </div>
+
+    <li><a href="#test-popup" data-effect="mfp-newspaper">Newspaper</a></li>
+</body>
+
+</html>
