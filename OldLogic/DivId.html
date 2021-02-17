@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Logic</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <select name="divSelect" id="">
+
+
+                    </select>
+                    <select name="" id=""></select>
+                    <select name="" id=""></select>
+                    <p>paragraph</p>
+                    <button>Button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script language="javascript">
+        var now = new Date();
+        if (now.getHours() < 12) {
+            document.write('Good Morning!');
+        }
+        else if (now.getHours() > 12 && now.getHours() == 15) {
+            document.write('Good Afternoon!');
+        }
+        else {
+            document.write('Good Evening!');
+        }
+    </script>
+    <script>
+
+        //count div
+        $("div").each(function () {
+            console.log("DIV: ", $("div").length);
+        });
+        //add class ,id and value
+        $("div").each(function (i, obj) {
+            i = i + 1;
+            $(this).addClass("Div");
+            $(this).attr("id", "div" + i);
+            $(this).attr("value", "div" + i);
+        })
+        //div class count
+        $(".Div").each(function () {
+            console.log("class count", $("Div").length);
+        })
+        //selected or not selected
+        $('select').each(function (selected) {
+            console.log("count select", $('select').length);
+        });
+        //css using jquery
+        $('p').each(function () {
+            $(this).css("color", "green");
+        });
+        $("button").click(function () {
+            $('p').detach();
+        })
+        $("Div").each(function () {
+            $(this).removeClass();
+        })
+    </script>
+</body>
+
+</html>
