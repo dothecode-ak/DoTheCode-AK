@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .nameError,
+        .emailError,
+        .checkBoxError {
+            color: red !important;
+        }
+
+        #formDIv {
+            display: none;
+            background-image: url(assets/formBg.png?v=2);
+            position: relative;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .inputForm {
+            padding-top: 28vh;
+            text-align: center;
+        }
+
+        .Inputcontrol {
+            text-align: center;
+            background: url(assets/txtBox.png) no-repeat center;
+            background-size: cover;
+            width: 60%;
+            height: 38px;
+            font-family: 'font8';
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .txt1 {
+            font-family: 'font10';
+            font-weight: normal;
+            font-style: normal;
+            color: white;
+            font-size: 8px;
+        }
+
+        input {
+            border: none;
+
+        }
+
+        .error {
+            display: block;
+            text-align: center;
+            color: red;
+            font-family: 'OpenSans';
+            font-size: 10px;
+            ;
+        }
+
+        .submitBtn {
+            width: 29%;
+            margin: 0 auto;
+            margin-top: 2%;
+        }
+
+        label {
+            color: white;
+        }
+
+        .class_checkbox1 {
+            width: 20px;
+            height: 20px;
+            background-image: url(./assets/chckBox.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 46%;
+            margin-top: 2%;
+        }
+
+        .class_checkbox1.checked {
+            background-image: url(./assets/chckBoxtick.png);
+        }
+
+
+        #formScreen2 {
+            display: none;
+            position: relative;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .inputForm3 {
+            padding-top: 42vh;
+            text-align: center;
+        }
+
+        .playAgain2 {
+            width: 25%;
+        }
+
+        .Inputcontrol3 {
+            text-align: center;
+            width: 62%;
+            height: 52px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .txt2 {
+            color: white;
+        }
+
+        input {
+            border: none;
+
+        }
+
+        .sendBtn {
+            width: 18%;
+            margin-bottom: -4%;
+        }
+
+        label {
+            color: white;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #checkBox {
+                margin-top: 5.5vh;
+                position: absolute;
+                left: 8vh;
+                width: 6.5vh;
+                top: 46.3vh;
+                z-index: 2;
+            }
+
+            #makeDonation2 {
+                width: 10vh;
+                float: right;
+                margin-right: 17%;
+            }
+
+            .inputForm4 {
+                text-align: center;
+                margin-top: 14vh;
+            }
+
+            .class_checkbox2 {
+                width: 50px;
+                height: 50px;
+                background-image: url(./assets/chckBox.png);
+                background-repeat: no-repeat;
+                margin-left: 14%;
+            }
+
+            .class_checkbox2.checked {
+                background-image: url(./assets/chckBoxtick.png);
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            #checkBox {
+                margin-top: 5.5vh;
+                position: absolute;
+                left: 8vh;
+                width: 6.5vh;
+                top: 46.3vh;
+                z-index: 2;
+            }
+
+            #makeDonation2 {
+                width: 10vh;
+                float: right;
+                margin-right: 17%;
+            }
+
+            .inputForm4 {
+                text-align: center;
+                margin-top: 14vh;
+            }
+
+            .class_checkbox2 {
+                width: 50px;
+                height: 50px;
+                background-image: url(./assets/chckBox.png);
+                background-repeat: no-repeat;
+                margin-left: 14%;
+            }
+
+            .class_checkbox2.checked {
+                background-image: url(./assets/chckBoxtick.png);
+            }
+        }
+
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+
+<body>
+    <div id="formDIv">
+        <div class="inputForm">
+            <p style=" font-family: 'font9';
+            font-weight: normal;
+            font-style: normal;text-align: center;
+    font-size: 45px;
+    color: green;">000</p>
+            <input name="name" class="Inputcontrol" placeholder="name" id="name" type="text" style="margin-top: 14vh;">
+            <p class="nameError"></p>
+            <br>
+            <input name="email" class="Inputcontrol" placeholder="email" id="email" type="text">
+            <p class="emailError"></p>
+            <br>
+            <p class="txt1">For ShopFarEast members,<br> please use your registered email address.</p>
+            <div class="error" class="txt1"></div>
+            <input type="image" class="submitBtn" id="subFormBtn" src="assets/submitBtn.png" alt="Submit"><br>
+            <input type="checkbox" class="input_class_checkbox1" id="checkBox" name="checkbox">
+            <p class="checkBoxError"></p>
+        </div>
+    </div>
+
+    <!-- form Scren1 js -->
+    <script>
+        $('.input_class_checkbox1').each(function () {
+            $(this).hide().after('<div class="class_checkbox1" />');
+
+        });
+
+        $('.class_checkbox1').on('click', function () {
+            $(this).toggleClass('checked').prev().prop('checked', $(this).is('.checked'))
+        });
+    </script>
+    <script>
+        var deviceDetector = function () {
+            var b = navigator.userAgent.toLowerCase(),
+                a = function (a) {
+                    void 0 !== a && (b = a.toLowerCase());
+                    return /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(b) ? "tablet" : /(mobi|ipod|phone|blackberry|opera mini|fennec|minimo|symbian|psp|nintendo ds|archos|skyfire|puffin|blazer|bolt|gobrowser|iris|maemo|semc|teashark|uzard)/.test(b) ? "phone" : "desktop"
+                };
+            return {
+                device: a(),
+                detect: a,
+                isMobile: "desktop" != a() ? !0 : !1,
+                userAgent: b
+            }
+        }();
+    </script>
+</body>
+
+</html>
