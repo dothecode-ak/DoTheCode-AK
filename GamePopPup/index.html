@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gmap Popup</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <style>
+        .callDirections {
+            border: 4px solid #000000;
+        }
+
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        #location {
+            height: 100%;
+        }
+
+        p {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>
+        <button class="callDirections" data-latLng="53.488188,-2.373019">Call Now</button>
+        <button class="callDirections" data-latLng="-34.397, 150.644">Get Directions</button>
+    </p>
+    <div id="location"></div>
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery(document).on("click", ".callDirections", function (e) {
+                e.preventDefault();
+                var latLng = jQuery(this).attr("data-latLng");
+                initialize(latLng);
+            });
+
+            function initialize(latLng) {
+                latLng = latLng.split(",")
+                var mapOptions = {
+                    center: new google.maps.LatLng(latLng[0], latLng[1]),
+                    zoom: 8
+                };
+                var map = new google.maps.Map(document.getElementById("location"), mapOptions);
+            }
+        });	
+    </script>
+</body>
+
+</html>

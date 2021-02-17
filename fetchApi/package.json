@@ -1,0 +1,17 @@
+{
+  "name": "fetchApi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetchApi.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "unirest": "^0.6.0"
+  }
+}
