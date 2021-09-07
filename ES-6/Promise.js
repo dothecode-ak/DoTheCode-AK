@@ -16,4 +16,7 @@ const newPromise=new Promise((resolve,reject)=>
     }).finally(()=>
     {
         console.log('Finall Statement Accessed')
-    })
+    });
+
+
+    newPromise();
