@@ -1,4 +1,4 @@
- var data = 100;
+ var data = 10;
 const Name= (n)=>
 {
     console.log(n);

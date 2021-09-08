@@ -10,6 +10,5 @@ class Profile
         console.log(`${this.fname} ${this.lname}`);
     }
 }
-
-let profileObj=new Profile('Anil','Yadav');
+let profileObj=new Profile('Anil','Yadava');
 profileObj.getName();
