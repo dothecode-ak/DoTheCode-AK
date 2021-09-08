@@ -51,22 +51,7 @@ console.log("Hello");
 
 
 
-        var arr1Data=    [{
-                "firstname": "John",
-                "lastname": "Doe",
-                "age": "26"
-                },
-                {
-                "firstname": "Sarah",
-                "lastname": "Maning",
-                "age": "32"
-                },
-                {
-                "firstname": "Peter",
-                "lastname": "Parker",
-                "age": "16"
-                }
-                ]
+        
 
 var blankArr=[];
 const obj={a:10};
