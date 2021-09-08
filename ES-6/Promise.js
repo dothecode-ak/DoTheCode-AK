@@ -1,7 +1,7 @@
 const newPromise=new Promise((resolve,reject)=>
 {
-    var status=1;
-    if(status==1)
+    var status=2;
+    if(status==2)
     {
         resolve('yes');
     }
