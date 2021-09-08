@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Blob</title>
+</head>
+
+<body>
+    <div class="blobMain">
+        <h1>Example the Blob Test</h1>
+        <button onclick="data();">Submit</button>
+    </div>
+
+    <script>
+        let link = document.createElement('a');
+        link.download = 'welcome.txt';
+        let blob = new Blob(['This is the test!'], {
+            type: 'text/plain'
+        });
+        link.href = URL.createObjectURL(blob);
+        console.log(link);
+
+        const button = document.getElementsByTagName('button');
+
+        function data() {
+            link.click();
+        }
+        // URL.revokeObjectURL(link.href);
+    </script>
+</body>
+
+</html>
