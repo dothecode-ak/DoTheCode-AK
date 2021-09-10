@@ -4,3 +4,4 @@ export const plusQty =()=>{
 export const minusQty=()=>{
     return {type:"MINUS"}
 }
+ 

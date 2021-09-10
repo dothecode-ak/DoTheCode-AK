@@ -15,7 +15,7 @@ const App = () => {
 <p>Increment the Decrement Items</p>
 <div className='quantity-tab'>
 <a id='qty_minus' onClick={()=>dispatch(minusQty())}><span>-</span></a>
-<input type="text" name="" value={myState} placeholder='0' />
+<input type="text" name="" value ={myState} placeholder='0' />
 <a id='qty_plus' onClick={()=>dispatch(plusQty())}><span>+</span></a>
 </div>
   </div>
