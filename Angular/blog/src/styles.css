@@ -6,3 +6,19 @@
         flex-basis: auto;
     }
 }
+
+.courseDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 12px;
+}
+
+.container-fluid,
+.navbar-brand {
+    font-size: 2rem;
+}

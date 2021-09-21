@@ -1,0 +1,19 @@
+{
+    "name": "webpack-project",
+    "version": "1.0.0",
+    "description": "It's learning project",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack",
+        "start": "webpack-dev-server --mode development --open"
+    },
+    "author": "Anil",
+    "license": "ISC",
+    "dependencies": {
+        "webpack": "^5.52.1",
+        "webpack-cli": "^4.8.0"
+    },
+    "devDependencies": {
+        "webpack-dev-server": "^4.2.1"
+    }
+}

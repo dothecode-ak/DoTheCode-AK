@@ -10,7 +10,6 @@ import { AboutComponent } from './about/about.component';
 import { CourseComponent } from './course/course.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +24,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     UserModule,
-    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
