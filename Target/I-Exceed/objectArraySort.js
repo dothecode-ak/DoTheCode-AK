@@ -1,20 +1,16 @@
-var arr1Data=    [{
-    "firstname": "John",
-    "lastname": "Doe",
-    "age": "26"
-    },
+var userList=    [{
+    "firstname": "Aman",
+    "lastname": "Singh",
+    "age": "26"},
+    {"firstname": "Shailesh",
+    "lastname": "Ray",
+    "age": "32" },
     {
-    "firstname": "Sarah",
-    "lastname": "Maning",
-    "age": "32"
-    },
-    {
-    "firstname": "Peter",
-    "lastname": "Parker",
+    "firstname": "Amar",
+    "lastname": "Pandey",
     "age": "16"
     }]
-
-    arr1Data.sort((a,b)=>
+    userList.sort((a,b)=>
     {
         let new_a=a.firstname.toLocaleLowerCase(),
         new_b=b.firstname.toLocaleLowerCase();
@@ -32,4 +28,4 @@ var arr1Data=    [{
         }
     });
 
-    console.log(arr1Data);
+    console.log(userList);
