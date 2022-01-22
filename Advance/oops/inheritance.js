@@ -17,8 +17,9 @@ class Manager extends Employee {
         return `Name:- ${this.name}, Age:- ${this.age}, Salary:- ${totalSalary} RS.`
     }
 }
+const emp = ['Anil', 28, 200000]
 
-let hiked_user = new Manager('Anil', 28, 200000);
+let hiked_user = new Manager(...emp);
 let emp_user = new Employee('Sunil', 25, 27000)
 console.log(hiked_user.getInfo());
 console.log(emp_user.getInfo());
